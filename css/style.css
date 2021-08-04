@@ -1,0 +1,62 @@
+/**Body**/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/**Dark**/
+
+.dark{
+    background-color: #232326;
+    color: #F3F2F0;
+}
+
+/**Wrapper**/
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/**Navigation**/
+
+.nav-link {
+    text-decoration: none;
+    color: #F3F2F0;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #D40000;
+    transition: .2s;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+/**Photo**/
+
+.photo {
+    margin-bottom: 120px;
+    width: 1140px;
+    width: 100%;
+
+}
+
+/**Main**/
+
+.title-h1 {
+    font-size: 700;
+    font-weight: 74px;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 400;
+    font-weight: 28px;
+    margin-bottom: 60px;
+}
