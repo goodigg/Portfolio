@@ -6,11 +6,25 @@ body {
 
 /**Dark**/
 
-.dark{
+.dark {
     background-color: #232326;
     color: #F3F2F0;
 }
 
+.dark .nav-link {
+    color: #F3F2F0;
+}
+
+/**Light**/
+
+.light {
+    background-color: #F3F2F0;
+    color: #010101;
+}
+
+.light .nav-link {
+    color: #010101;
+}
 /**Wrapper**/
 
 .wrapper {
@@ -22,6 +36,33 @@ body {
 
 /**Navigation**/
 
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0%;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.nav-item:first-child {
+    padding-left: 0;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
 .nav-link {
     text-decoration: none;
     color: #F3F2F0;
@@ -31,11 +72,6 @@ body {
 .nav-link:hover {
     color: #D40000;
     transition: .2s;
-}
-
-li {
-    display: inline-block;
-    margin: 10px 10px;
 }
 
 /**Photo**/
