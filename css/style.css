@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 
 /**Dark**/
@@ -15,6 +16,13 @@ body {
     color: #F3F2F0;
 }
 
+.dark .circle circle{
+    fill: #D40000;
+}
+
+.dark .triangle path{
+    fill: #fff;
+}
 /**Light**/
 
 .light {
@@ -24,6 +32,14 @@ body {
 
 .light .nav-link {
     color: #010101;
+}
+
+.light .circle circle {
+    fill: #fff;
+}
+
+.light .triangle path {
+    fill: #D40000;
 }
 /**Wrapper**/
 
@@ -74,6 +90,26 @@ header > nav {
     transition: .2s;
 }
 
+.nav-info .nav-item {
+    position: relative;
+}
+
+.nav-info .nav-item::before {
+    content: "";
+    background-color: #F3F2F0;
+    width: 1px;
+    height: 24px;
+    display: block;
+    opacity: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+}
+
+.nav-info .nav-item:first-child::before {
+    display: none;
+}
+
 /**Photo**/
 
 .photo {
@@ -95,4 +131,67 @@ header > nav {
     font-size: 400;
     font-weight: 28px;
     margin-bottom: 60px;
+}
+
+/** Social **/
+
+.title-h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+
+.project {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.project-img {
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image: url(/img/icons/Arrow\ 1.svg);
+    margin-left: 15px;
+}
+
+/**Skill**/
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill .title-h3{
+    text-transform: uppercase;
+}
+
+.skill-item {
+    flex: 0 0 24%;
+    margin-bottom: 115px;
+}
+
+.skill .discrition {
+    line-height: 21px;
+}
+
+
+/**Circles**/
+
+.circle-main {
+    height: 253px;
+    width: 253px;
+}
+
+.circle-nav {
+    Width: 106px;
+    Height: 106px;
 }
